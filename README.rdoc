@@ -1,4 +1,4 @@
-== Bart Cullimore's lschallenge submission
+== Bart Cullimore's Challenge submission
 
 == Installation
 Install via bundler, rake the database, start the server, and kick the wheels (http://localhost:3000):

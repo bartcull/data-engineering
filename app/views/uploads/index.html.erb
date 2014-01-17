@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+<h2>Data Import</h2>
+<p id="instructions">Select a file and click import to submit your purchase data.</p>
+<%= form_tag import_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
