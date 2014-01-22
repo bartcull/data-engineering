@@ -5,7 +5,6 @@ class PurchaseImport
     @total_revenue = 0
     SmarterCSV.process(file.path, { col_sep: "\t", chunk_size: 3 }) do |chunk|
       chunk.each do |row|
-        Rails.logger.warn row.inspect
         hasher = ImportHashBuilder.new(row)
         hasher.save
         @total_revenue += hasher.revenue
